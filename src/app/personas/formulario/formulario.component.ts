@@ -8,18 +8,14 @@ import { ActivatedRoute, Router } from '@angular/router';
   selector: 'app-formulario',
   templateUrl: './formulario.component.html',
   styleUrls: ['./formulario.component.css'],
-  //providers:[LoggingService]
+
 })
 export class FormularioComponent implements OnInit{
-
-   //@Output() personaCreada=new EventEmitter<Persona>();
 
   nombreInput:string;
   apellidoInput:string;
   index:number;
   modoEdicion:number;
-  //@ViewChild('nombreInput') nombre:ElementRef;
-  //@ViewChild('apellidoInput') apellido:ElementRef;
 
   constructor(private router:Router,
               private route:ActivatedRoute,
